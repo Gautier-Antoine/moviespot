@@ -1,0 +1,77 @@
+/*
+ Theme Name: MovieSpot
+ Description: Project for RevPanda
+ Version: 0.0.1
+ Author: GautierAntoine
+ Author URI: https://www.gautierantoine.com
+*/
+:root {
+  --blue: 28, 195, 255;
+  --white: 255, 255, 255;
+  --dark: 50, 50, 50;
+}
+
+html {
+  background-color: rgba(var(--dark), 1);
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica";
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(var(--dark), 1);
+}
+body p {
+  line-height: 1.2em;
+}
+body a {
+  color: rgb(var(--blue));
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s all ease-out;
+}
+body a:hover {
+  transform: scale(1.05);
+}
+body h2 {
+  padding: 10px 0;
+}
+body header {
+  height: 100px;
+  background-color: rgba(var(--dark), 1);
+  padding: 20px;
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav a {
+  font-size: 20px;
+  vertical-align: middle;
+}
+body .site-content {
+  padding: 0;
+  background-color: rgba(var(--white), 1);
+}
+body .site-content > *:not(.wp-block-cover) {
+  margin: 0 5%;
+  padding: 20px 0;
+}
+@media screen and (min-width: 782px) {
+  body .site-content > *:not(.wp-block-cover) {
+    margin: 0 10%;
+  }
+}
+body footer {
+  padding: 20px 0;
+  background-color: rgba(var(--dark), 1);
+  color: rgba(var(--white), 1);
+}
+body footer > *:not(.wp-block-cover) {
+  margin: 0 10%;
+}
+body footer .copyright {
+  text-align: center;
+}
